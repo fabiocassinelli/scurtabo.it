@@ -4,54 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scurtabò.it</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 50px 20px;
-        }
-        h1 {
-            margin: 0 0 20px;
-            font-size: 3em;
-        }
-        img {
-            max-width: 90%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-        main {
-            padding: 40px 20px;
-        }
-        h2 {
-            color: #333;
-            margin-top: 50px;
-        }
-        .pdf-box {
-            margin: 20px auto 50px;
-            width: 90%;
-            max-width: 900px;
-            height: 600px;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            background: white;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="territorio.html">Territorio</a></li>
+            <li><a href="saggi/index.html">Saggi</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>Benvenuti su Scurtabò.it</h1>
         <img src="images/foto-chiesa.JPG" alt="Foto Chiesa">
@@ -60,23 +22,11 @@
     <main>
         <p>Raccolta di dossier e documenti dedicati a Scurtabò.</p>
 
-        <h2>Dossier 1 – Storia del paese</h2>
-        <div class="pdf-box">
-            <iframe src="pdf/dossier1.pdf"></iframe>
-        </div>
-
-        <h2>Dossier 2 – Documenti e fotografie</h2>
-        <div class="pdf-box">
-            <iframe src="pdf/dossier2.pdf"></iframe>
-        </div>
-
-        <!-- Per aggiungere altri PDF, copia un blocco come questo:
-        <h2>Titolo Dossier</h2>
-        <div class="pdf-box">
-            <iframe src="pdf/nomedelfile.pdf"></iframe>
-        </div>
-        -->
+        <!-- I saggi sono ora nella sezione Saggi -->
 
     </main>
+    <footer>
+        <p>&copy; 2026 Scurtabò.it - Sito dedicato alla frazione di Scurtabò</p>
+    </footer>
 </body>
 </html>
