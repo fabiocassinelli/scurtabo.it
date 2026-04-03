@@ -94,11 +94,13 @@ ol li
   background-attachment: fixed;}
 
 #logo
-{ width: 870px;
+{ width: 100%;
+  max-width: 900px;
   height: 127px;
   position: relative;
   background: transparent;
-  padding-top: 20px;}
+  padding-top: 20px;
+  box-sizing: border-box;}
 
 #logo #logo_text 
 { position: absolute; 
@@ -146,10 +148,13 @@ ol li
 { border: none;}
 
 #menubar
-{ width: 870px;
+{ width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
   height: 46px;
   padding-top: 4px;
-  padding-left: 4px;
+  padding-left: 0;
+  box-sizing: border-box;
   background: linear-gradient(to bottom, #8B7355, #6B5344);} 
 
 ul#menu
