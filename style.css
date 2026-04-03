@@ -152,14 +152,15 @@ ol li
   max-width: 900px;
   margin: 0 auto;
   height: 46px;
-  padding-top: 4px;
-  padding-left: 0;
+  padding: 4px 0 0 0;
   box-sizing: border-box;
+  overflow: hidden;
   background: linear-gradient(to bottom, #8B7355, #6B5344);} 
 
 ul#menu
 { float: right;
-  margin: 0px;}
+  margin: 0px;
+  padding-right: 10px;}
 
 ul#menu li
 { float: left;
