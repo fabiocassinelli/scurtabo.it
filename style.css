@@ -225,7 +225,8 @@ ul#menu li a:hover
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px 0 15px 0;}
+  padding: 20px 0 15px 0;
+  font-size: 1.05em;}
 
 #content_footer
 { width: 100%;
