@@ -151,37 +151,47 @@ ol li
 { width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  height: 46px;
-  padding: 4px 0 0 0;
+  height: auto;
+  padding: 4px 10px 0 10px;
   box-sizing: border-box;
-  overflow: hidden;
-  background: linear-gradient(to bottom, #8B7355, #6B5344);} 
+  overflow: auto;
+  background: linear-gradient(to bottom, #8B7355, #6B5344);
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+} 
 
 ul#menu
-{ float: right;
+{ float: none;
   margin: 0px;
-  padding-right: 10px;}
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;}
 
 ul#menu li
-{ float: left;
+{ float: none;
   margin: 5px 0 0 0;
-  padding: 0 0 0 6px;
-  list-style: none;}
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
 
 ul#menu li a
 { letter-spacing: 0.1em;
   font-family: "Palatino Linotype", serif;
   font-size: 100%;
   display: block; 
-  float: left; 
+  float: none; 
   height: 20px;
   text-decoration: none; 
-  padding: 9px 22px 5px 16px;
+  padding: 9px 16px 5px 16px;
   text-align: center;
   color: #FFF;
   text-transform: uppercase;
   border: none;
   transition: all 0.3s ease;
+  white-space: nowrap;
 } 
 
 ul#menu li.selected a
