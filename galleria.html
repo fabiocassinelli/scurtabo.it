@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria – Scurtabò</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .gallery-item {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+        
+        .gallery-item p {
+            margin-top: 15px;
+            color: #8B7355;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .gallery-item .description {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 8px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Scurtab<span class="logo_colour">ò</span></a></h1>
+          <h2>Storia e Tradizioni di una frazione ligure</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="territorio.html">Territorio</a></li>
+          <li class="selected"><a href="galleria.html">Galleria</a></li>
+          <li><a href="saggi/index.html">Saggi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="content">
+        <h1>Galleria Fotografica</h1>
+        <p>Scopri la bellezza paesaggistica e il patrimonio di Scurtabò attraverso la nostra raccolta fotografica. Ogni immagine racconta una storia della nostra frazione.</p>
+        
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="images/foto-chiesa_ridotta.jpg" alt="Chiesa di Scurtabò">
+            <p>Chiesa di Scurtabò</p>
+            <div class="description">Il simbolo religioso e culturale della frazione</div>
+          </div>
+          
+          <div class="gallery-item">
+            <img src="images/foto-panorama_ridotta.jpg" alt="Panorama di Scurtabò">
+            <p>Panorama di Scurtabò</p>
+            <div class="description">Una vista suggestiva del territorio ligure</div>
+          </div>
+        </div>
+        
+        <h2>Condividi le Tue Foto</h2>
+        <p>Se possiedi fotografie di Scurtabò che desideri condividere con la comunità, siamo interessati a riceverle. Contattaci per aggiungere le tue immagini alla nostra galleria!</p>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="territorio.html">Territorio</a> | <a href="galleria.html">Galleria</a> | <a href="saggi/index.html">Saggi</a></p>
+      <p>Copyright © 2026 Scurtabò.it - Sito dedicato alla storia di Scurtabò</p>
+    </div>
+  </div>
+</body>
+
+</html>

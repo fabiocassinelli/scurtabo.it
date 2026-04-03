@@ -1,34 +1,37 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Territorio - Scurtabò.it</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Territorio – Scurtabò</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <style>
-        #map {
-            height: 500px;
-            width: 100%;
-            margin: 20px 0;
-        }
-    </style>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="territorio.html">Territorio</a></li>
-            <li><a href="saggi/index.html">Saggi</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Territorio di Scurtabò</h1>
-    </header>
 
-    <main>
-        <p>Scopri il territorio di Scurtabò attraverso questa mappa interattiva. Il poligono in rosso rappresenta i confini approssimativi della frazione.</p>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Scurtab<span class="logo_colour">ò</span></a></h1>
+          <h2>Storia e Tradizioni di una frazione ligure</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="territorio.html">Territorio</a></li>
+          <li><a href="galleria.html">Galleria</a></li>
+          <li><a href="saggi/index.html">Saggi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="content">
+        <h1>Territorio di Scurtabò</h1>
+        <p>Scopri il territorio di Scurtabò attraverso questa mappa interattiva. Il poligono in rosso rappresenta i confini della frazione.</p>
         
         <div id="map"></div>
 
@@ -50,8 +53,8 @@
 
             L.geoJSON(geojsonData, {
                 style: {
-                    color: 'red',
-                    fillColor: 'red',
+                    color: '#8B7355',
+                    fillColor: '#8B7355',
                     fillOpacity: 0.2
                 },
                 onEachFeature: function (feature, layer) {
@@ -59,9 +62,14 @@
                 }
             }).addTo(map);
         </script>
-    </main>
-    <footer>
-        <p>&copy; 2026 Scurtabò.it - Sito dedicato alla frazione di Scurtabò</p>
-    </footer>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="territorio.html">Territorio</a> | <a href="galleria.html">Galleria</a> | <a href="saggi/index.html">Saggi</a></p>
+      <p>Copyright © 2026 Scurtabò.it - Sito dedicato alla storia di Scurtabò</p>
+    </div>
+  </div>
 </body>
+
 </html>
